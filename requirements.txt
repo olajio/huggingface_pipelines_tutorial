@@ -1,0 +1,43 @@
+# Hugging Face Pipelines - Requirements
+# =====================================
+
+# Core dependencies
+transformers>=4.30.0
+torch>=2.0.0
+
+# Optional: TensorFlow backend (alternative to PyTorch)
+# tensorflow>=2.12.0
+
+# For datasets and evaluation
+datasets>=2.12.0
+
+# For faster training and inference
+accelerate>=0.20.0
+
+# For image processing (multimodal pipelines)
+pillow>=9.0.0
+torchvision>=0.15.0
+
+# For audio processing
+torchaudio>=2.0.0
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# For optimization
+optimum>=1.8.0
+onnxruntime>=1.14.0
+
+# For API development (optional)
+fastapi>=0.100.0
+uvicorn>=0.22.0
+pydantic>=2.0.0
+
+# For notebooks
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+matplotlib>=3.7.0
+
+# Utility
+numpy>=1.24.0
+tqdm>=4.65.0
+requests>=2.31.0
