@@ -33,18 +33,18 @@ Think of it as a **"plug-and-play" interface** that handles all the complexity o
 ┌─────────────────────────────────────────────────────────────┐
 │                        PIPELINE                             │
 ├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────┐    ┌─────────────┐    ┌─────────────────┐ │
-│  │  TOKENIZER  │───▶│    MODEL    │───▶│ POST-PROCESSOR  │ │
-│  │             │    │             │    │                 │ │
-│  │ - Encode    │    │ - Forward   │    │ - Decode        │ │
-│  │ - Truncate  │    │ - Inference │    │ - Format        │ │
-│  │ - Pad       │    │             │    │ - Aggregate     │ │
-│  └─────────────┘    └─────────────┘    └─────────────────┘ │
-│        ▲                                       │           │
-│        │                                       ▼           │
-│   Raw Input                              Structured Output │
-│   (text, image,                         (labels, scores,   │
-│    audio, etc.)                          text, etc.)       │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────────┐  │
+│  │  TOKENIZER  │───▶│    MODEL    │───▶│ POST-PROCESSOR  │  │
+│  │             │    │             │    │                 │  │
+│  │ - Encode    │    │ - Forward   │    │ - Decode        │  │
+│  │ - Truncate  │    │ - Inference │    │ - Format        │  │
+│  │ - Pad       │    │             │    │ - Aggregate     │  │
+│  └─────────────┘    └─────────────┘    └─────────────────┘  │
+│        ▲                                       │            │
+│        │                                       ▼            │
+│   Raw Input                              Structured Output  │
+│   (text, image,                         (labels, scores,    │
+│    audio, etc.)                          text, etc.)        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
